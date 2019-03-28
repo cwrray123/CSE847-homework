@@ -47,6 +47,7 @@ opts.maxIter = 5000;
  
  acc2 = [];
  for i=1:length(par)
+     correct = 0;
      [w,c] = LogisticR(x_train, y_train, par(i), opts);
      for  j= 1:length(y_test)
        if y_test(j) == pred(j)
